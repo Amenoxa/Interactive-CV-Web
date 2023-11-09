@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(7, 8, 13);
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    @media (max-width:600px) {
+    }
+}

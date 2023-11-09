@@ -1,0 +1,24 @@
+.typing {
+    width: 80%;
+    font-family: 'Rampart One', cursive;
+    font-size: 30px;
+    color: rgb(120, 177, 63);
+    margin-left: 5vw;
+    @media (max-width:600px) {
+        font-size: 15px;
+    }
+}
+
+p {
+    margin: 0;
+    line-height: 150%;
+    text-shadow: 0 0 3px chartreuse;
+    &::before {
+        content: "> ";
+    }
+    &:nth-last-of-type(1)::after {
+        content: "_";
+        animation: underline .3s infinite alternate;
+        -webkit-animation: underline .3s infinite alternate;
+}
+}
