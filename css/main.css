@@ -5,6 +5,12 @@
           box-sizing: border-box;
 }
 
+@media (max-width: 1100px) {
+  * {
+    overflow-x: hidden;
+  }
+}
+
 ul {
   list-style-type: none;
 }
@@ -69,10 +75,50 @@ p:nth-last-of-type(1)::after {
 
 @media (max-width: 1100px) {
   .center {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+  }
+}
+
+.center_overflowWrapper {
+  position: fixed;
+  left: 400px;
+  top: 200px;
+}
+
+.center_overflowWrapper_text {
+  color: #ca0505;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.center_overflowWrapper_text--education {
+  display: none;
+}
+
+.center_overflowWrapper_text--aboutMe {
+  display: none;
+}
+
+.center_overflowWrapper_text--contacts {
+  display: none;
+}
+
+.center_overflowWrapper_text--experience {
+  display: none;
+}
+
+.center_overflowWrapper_text--skills {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .center_overflowWrapper {
+    display: none !important;
   }
 }
 
@@ -82,6 +128,7 @@ p:nth-last-of-type(1)::after {
   position: absolute;
   top: 420px;
   left: 90px;
+  display: inline-block;
 }
 
 .center_circle--inner {
@@ -143,12 +190,91 @@ p:nth-last-of-type(1)::after {
 }
 
 .center_menu {
-  position: absolute;
+  position: fixed;
   z-index: +10;
   border-radius: 50%;
   border-color: #ca0505;
   border-width: 2px;
   border-style: solid;
+}
+
+.center_menu--aboutMe {
+  top: 40px;
+  left: 300px;
+  opacity: 0%;
+  display: block;
+  -webkit-animation: forwards;
+          animation: forwards;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.center_menu--contacts {
+  top: 70px;
+  left: 340px;
+  opacity: 0%;
+  -webkit-animation: forwards;
+          animation: forwards;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.center_menu--contacts:hover .center_overflowWrapper_text--contacts {
+  opacity: 1;
+}
+
+.center_menu--education {
+  top: 330px;
+  left: 370px;
+  opacity: 0%;
+  -webkit-animation: forwards;
+          animation: forwards;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.center_menu--education:hover .center_overflowWrapper_text--education {
+  visibility: visible;
+}
+
+.center_menu--experience {
+  top: 365px;
+  left: 335px;
+  opacity: 0%;
+  -webkit-animation: forwards;
+          animation: forwards;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.center_menu--skills {
+  top: 400px;
+  left: 300px;
+  opacity: 0%;
+  -webkit-animation: forwards;
+          animation: forwards;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
 }
 
 @media screen and (max-width: 1100px) {
@@ -251,77 +377,18 @@ p:nth-last-of-type(1)::after {
   }
 }
 
-.skills {
-  top: 370px;
-  right: 50px;
-  opacity: 0%;
-  -webkit-animation: forwards;
-          animation: forwards;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 14s;
-          animation-delay: 14s;
+.invisiable {
+  display: none;
 }
 
-.experience {
-  top: 345px;
-  right: 20px;
-  opacity: 0%;
-  -webkit-animation: forwards;
-          animation: forwards;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
-}
-
-.education {
-  top: 315px;
-  right: -10px;
-  opacity: 0%;
-  -webkit-animation: forwards;
-          animation: forwards;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-
-.contacts {
-  top: 50px;
-  right: 0px;
-  opacity: 0%;
-  -webkit-animation: forwards;
-          animation: forwards;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
-}
-
-.aboutMe {
-  top: 20px;
-  right: 30px;
-  opacity: 0%;
-  -webkit-animation: forwards;
-          animation: forwards;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+.visiable {
+  display: block;
 }
 
 .message {
+  position: fixed;
+  bottom: 3%;
+  left: auto;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;

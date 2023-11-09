@@ -27,3 +27,54 @@ for (var i = 0; i < buttonEl.length; i++) {
     leaveButton(e.target)
   }, false);  
 }
+
+
+anime({
+    targets: '.center_name',
+    translateX: [-500, 0],
+    easing: 'easeOutExpo',
+    duration: 1500,
+    delay: 8000
+  });
+
+  $(function(){
+    $('.center_menu--aboutMe').hover(function() {
+      $('.center_overflowWrapper_text--aboutMe').addClass('visiable');
+    }, function() {
+      $('.center_overflowWrapper_text--aboutMe').removeClass('visiable');
+    })
+  })
+
+  $(function(){
+    $('.center_menu--contacts').hover(function() {
+      $('.center_overflowWrapper_text--contacts').addClass('visiable');
+    }, function() {
+      $('.center_overflowWrapper_text--contacts').removeClass('visiable');
+    })
+  })
+
+  $(function(){
+    $('.center_menu--experience').hover(function() {
+      $('.center_overflowWrapper_text--experience').addClass('visiable');
+    }, function() {
+      $('.center_overflowWrapper_text--experience').removeClass('visiable');
+    })
+  })
+
+  $(function(){
+    $('.center_menu--skills').hover(function() {
+      $('.center_overflowWrapper_text--skills').addClass('visiable');
+    }, function() {
+      $('.center_overflowWrapper_text--skills').removeClass('visiable');
+    })
+  })
+
+  $(function(){
+    $('.center_menu--education').hover(function() {
+      $('.center_overflowWrapper_text--education').addClass('visiable');
+    }, function() {
+      $('.center_overflowWrapper_text--education').removeClass('visiable');
+    })
+  })
+
+  
