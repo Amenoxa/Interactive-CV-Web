@@ -77,4 +77,50 @@ anime({
     })
   })
 
-  
+  $(function(){
+    $('.center_menu--contacts').click(function() {
+      $('.sections_contacts').addClass('visiable').removeClass('invisiable');
+      $('.sections_aboutMe').removeClass('visiable').addClass('invisiable');
+      $('.sections_experience').removeClass('visiable').addClass('invisiable');
+      $('.sections_education').removeClass('visiable').addClass('invisiable');
+      $('.sections_skills').removeClass('visiable').addClass('invisiable');
+    })
+  })
+  $(function(){
+    $('.center_menu--aboutMe').click(function() {
+      $('.sections_aboutMe').addClass('visiable').removeClass('invisiable');
+      $('.sections_contacts').removeClass('visiable').addClass('invisiable');
+      $('.sections_experience').removeClass('visiable').addClass('invisiable');
+      $('.sections_education').removeClass('visiable').addClass('invisiable');
+      $('.sections_skills').removeClass('visiable').addClass('invisiable');
+    })
+  })
+  $(function(){
+    $('.center_menu--experience').click(function() {
+      $('.sections_experience').addClass('visiable').removeClass('invisiable');
+      $('.sections_contacts').removeClass('visiable').addClass('invisiable');
+      $('.sections_aboutMe').removeClass('visiable').addClass('invisiable');
+      $('.sections_education').removeClass('visiable').addClass('invisiable');
+      $('.sections_skills').removeClass('visiable').addClass('invisiable');
+    })
+  })
+  $(function(){
+    $('.center_menu--skills').click(function() {
+      $('.sections_skills').addClass('visiable').removeClass('invisiable');
+      $('.sections_contacts').removeClass('visiable').addClass('invisiable');
+      $('.sections_experience').removeClass('visiable').addClass('invisiable');
+      $('.sections_education').removeClass('visiable').addClass('invisiable');
+      $('.sections_aboutMe').removeClass('visiable').addClass('invisiable');
+    })
+  })
+  $(function(){
+    $('.center_menu--education').click(function() {
+      $('.sections_education').addClass('visiable').removeClass('invisiable');
+      $('.sections_contacts').removeClass('visiable').addClass('invisiable');
+      $('.sections_experience').removeClass('visiable').addClass('invisiable');
+      $('.sections_aboutMe').removeClass('visiable').addClass('invisiable');
+      $('.sections_skills').removeClass('visiable').addClass('invisiable');
+    })
+  })
+
+ 

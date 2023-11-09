@@ -3,11 +3,7 @@
     height: 550px;
     position: relative;
     top: 5vh;
-    @media (max-width:1100px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        }
+    grid-area: left;
     &_overflowWrapper {
         position: fixed;
         left: 400px;
@@ -104,10 +100,7 @@
                         animation: forwards;
                         animation-name: fadeIn;
                         animation-duration: 2s;
-                        animation-delay: 9s;
-                &:hover .center_overflowWrapper_text--aboutMe  {
-                    
-                }      
+                        animation-delay: 9s;     
             }
             &--contacts {
                 top: 70px;
@@ -117,9 +110,6 @@
                         animation-name: fadeIn;
                         animation-duration: 2s;
                         animation-delay: 10s;
-                        &:hover .center_overflowWrapper_text--contacts  {
-                            opacity: 1;
-                        } 
             }
             &--education {
                 top: 330px;
@@ -129,9 +119,6 @@
                         animation-name: fadeIn;
                         animation-duration: 2s;
                         animation-delay: 12s;
-                        &:hover .center_overflowWrapper_text--education  {
-                            visibility: visible;
-                        } 
             }
             &--experience {
                 top: 365px;
@@ -199,5 +186,5 @@
 
 
 
-.invisiable {display: none;}
-.visiable {display: block;}
+.invisiable {display: none !important;}
+.visiable {display: block !important;}

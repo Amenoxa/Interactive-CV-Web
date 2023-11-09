@@ -1,8 +1,6 @@
 const box = document.querySelector('.typing');
 const text = [
-  "The easiest way for a cyborg to offer the proof is for him to demonstrate that he is not bound by the Three Laws of Robotics. Since the Three Laws enforce socially acceptable behavior, this means he must demonstrate that he is capable of human (i.e. nasty) behavior.",
-  "If you work hard and stay in line, the machines feed you and keep you warm and alive.",
-  "The moment is God's will. Life reveals itself only to the conscious. The disharmony is in the robot mind's desire to control life to suit its individual interests - an impossibility; but you keep trying."
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nemo quas quisquam voluptas aperiam praesentium pariatur! Quam eius vitae perferendis magnam minus hic dolore assumenda laudantiumsed! Corrupti, rem debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis quo ab neque, consequatur quisquam deleniti minus nemo ut quae, laborum perspiciatis? Architecto a sed optio nam hic odit aspernatur?"
 ];
 let wordIndex = 0;
 let textIndex = 0;

@@ -1,18 +1,9 @@
 .typing {
-    width: 80%;
-    font-family: 'Rampart One', cursive;
-    font-size: 30px;
-    color: rgb(120, 177, 63);
-    margin-left: 5vw;
-    @media (max-width:600px) {
-        font-size: 15px;
-    }
+    color:aliceblue;
 }
 
 p {
-    margin: 0;
-    line-height: 150%;
-    text-shadow: 0 0 3px chartreuse;
+    
     &::before {
         content: "> ";
     }
