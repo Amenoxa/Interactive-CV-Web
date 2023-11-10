@@ -77,7 +77,6 @@
         margin-top: 40px;
         text-transform: uppercase;
         margin-bottom: 20px;
-
         }
         &_text {
         color: aliceblue;
@@ -95,7 +94,64 @@
             width:55%;
             border-top: 2px solid #d12032c9;
             margin-bottom: 20px;
-        
+        }
+        &_container {
+            margin-top: 20px;
+            &_icon {
+                font-size: 18px;
+            }
+            &_pl {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;
+                grid-template-areas: "item1 bar1" "disc1 disc1" "item2 bar2" "disc2 disc2" "item3 bar3" "disc3 disc3";
+                &_item {
+                    font-style: bold;
+                    font-weight: 900;
+                    align-self: center;
+                    justify-self: left;
+                    &1 {
+                        grid-area: item1;
+                    }
+                    &2 {
+                        grid-area: item2;
+                    }
+                    &3 {
+                        grid-area: item3;
+                    }
+                }
+                &_bar {
+                    fill: none;
+                    stroke:#d12032; 
+                    stroke-width: 2px;
+                    align-self: center;
+                    justify-self: left;
+                    &1 {
+                        grid-area: bar1;
+                    }
+                    &2 {
+                        grid-area: bar2;
+                    }
+                    &3 {
+                        grid-area: bar3;
+                    }
+                }
+                &_disc {
+                    color: rgb(47, 47, 48);
+                    font-size: 14px;
+                    font-style: italic;
+                    &1 {
+                        grid-area: disc1;
+                    }
+                    &2 {
+                        grid-area: disc2;
+                    }
+                    &3 {
+                        grid-area: disc3;
+                    }
+                }
+            }
         }
     }
     &_experience {
