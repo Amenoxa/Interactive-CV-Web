@@ -106,18 +106,35 @@
         margin-top: 40px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        position: relative;
+        }
+        &_arrow--up {
+            position: absolute;
+            font-size: 25px;
+            left: -50px;
+            top: 300px;
+        }
+        &_arrow--down {
+            position: absolute;
+            left: -50px;
+            font-size: 25px;
+            top: 350px;
         }
         &_grid {
             display: grid;
             grid-template-columns: 2fr 5fr; 
             grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr; 
             gap: 0px 30px; 
+            max-height: 500px;
+            overflow: hidden;
+            
             grid-template-areas: "date1 name1" ". fos1"  "date2 name2" ". fos2"  "date3 name3" ". fos3" "date4 name4" ". fos4";
              &_date {
                 color:rgb(18, 18, 19);
                 margin-top: 10px;
                 font-style: bold;
                 font-weight: 900;
+                display: inline-block;
                 &--1 { grid-area: date1;}
                 &--2 { grid-area: date2;}
                 &--3 { grid-area: date3;}
@@ -128,6 +145,7 @@
                 font-size: 18px;
                 font-weight: 600;
                 margin-top: 10px;
+                display: inline-block;
                 &--1 { grid-area: name1;}
                 &--2 { grid-area: name2;}
                 &--3 { grid-area: name3;}
@@ -137,6 +155,7 @@
                 color: rgba(26, 27, 27, 0.726);
                 font-style: italic;
                 margin-bottom: 5px;
+                display: inline-block;
                 &--1 { grid-area: fos1;}
                 &--2 { grid-area: fos2;}
                 &--3 { grid-area: fos3;}
