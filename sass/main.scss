@@ -18,6 +18,11 @@ li:hover {
 a {
     text-decoration: none;
 }
+:root {
+    --shadow-color: #FF9E9E;
+    --shadow-color-light: white;
+  }
+  
 
 //import sections
 @import "_typing.scss";
