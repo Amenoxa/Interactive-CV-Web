@@ -7,26 +7,25 @@
     opacity: 0%;
             animation: forwards;
             animation-name: fadeIn;
-            animation-duration: 5s;
-            animation-delay: 14s;
+            animation-duration:7s;
+            animation-delay: 8s;
     @media screen and (max-width:1100px) {
         display: none !important;
         }
     &_aboutMe {
-        position: fixed;
-        top: 5vh;
         justify-content: center;
         &_title {
-        color: #ca0505;
+        color: #d12032;
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
         text-transform: uppercase;
         margin-bottom: 20px;
 
         }
         &_text {
-        color: aliceblue;
+        color: rgb(22, 22, 22);
         margin-bottom: 20px;
+        font-style: thin;
         &::before {
             content:none;
         }
@@ -38,30 +37,44 @@
         &_line {
             display:block;
             width:55%;
-            border-top: 2px solid #ca0505c9;
+            border-top: 2px solid #d12032c9;
             margin-bottom: 20px;
         
         }
     }
     &_contacts {
-        position: fixed;
-        top: 5vh;
         &_title {
-        color: #ca0505;
+        color: #d12032;
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
         text-transform: uppercase;
         margin-bottom: 20px;
         }
+        &_text {
+            color: rgb(23, 24, 24);
+            margin-bottom: 20px;
+            &::before {
+                content:none;
+            }
+            &:nth-last-of-type(1)::after {
+                content: none;
+                animation: none;
+                }
+            }
+            &_line {
+                display:block;
+                width:55%;
+                border-top: 2px solid #d12032c9;
+                margin-bottom: 20px;
+            
+            }
     } 
     &_skills {
-        position: fixed;
-        top: 5vh;
         justify-content: center;
         &_title {
-        color: #ca0505;
+        color: #d12032;
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
         text-transform: uppercase;
         margin-bottom: 20px;
 
@@ -80,19 +93,17 @@
         &_line {
             display:block;
             width:55%;
-            border-top: 2px solid #ca0505c9;
+            border-top: 2px solid #d12032c9;
             margin-bottom: 20px;
         
         }
     }
     &_experience {
-        position: fixed;
-        top: 5vh;
         justify-content: center;
         &_title {
-        color: #ca0505;
+        color: #d12032;
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
         text-transform: uppercase;
         margin-bottom: 20px;
 
@@ -111,22 +122,53 @@
         &_line {
             display:block;
             width:55%;
-            border-top: 2px solid #ca0505c9;
+            border-top: 2px solid #d12032c9;
             margin-bottom: 20px;
         
         }
     }
     &_education {
-        position:fixed;
-        top: 5vh;
         justify-content: center;
         &_title {
-        color: #ca0505;
+        color: #d12032;
         font-size: 40px;
-        margin-top: 20px;
+        margin-top: 40px;
         text-transform: uppercase;
         margin-bottom: 20px;
 
+        }
+        &_grid {
+            display: grid;
+            grid-template-columns: 2fr 5fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+            gap: 0px 30px; 
+            grid-template-areas: "date1 name1" ". fos1"  "date2 name2" ". fos2"  "date3 name3" ". fos3";
+             &_date {
+                color:rgb(18, 18, 19);
+                margin-top: 10px;
+                font-style: bold;
+                font-weight: 900;
+                &--1 { grid-area: date1;}
+                &--2 { grid-area: date2;}
+                &--3 { grid-area: date3;}
+             }
+             &_name {
+                color:#d12032;
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 10px;
+                &--1 { grid-area: name1;}
+                &--2 { grid-area: name2;}
+                &--3 { grid-area: name3;}
+             }
+             &_fos {
+                color: rgba(26, 27, 27, 0.726);
+                font-style: italic;
+                margin-bottom: 5px;
+                &--1 { grid-area: fos1;}
+                &--2 { grid-area: fos2;}
+                &--3 { grid-area: fos3;}
+             }
         }
         &_text {
         color: aliceblue;
@@ -142,7 +184,7 @@
         &_line {
             display:block;
             width:55%;
-            border-top: 2px solid #ca0505c9;
+            border-top: 2px solid #d12032c9;
             margin-bottom: 20px;
         
         }
@@ -154,4 +196,35 @@
 @keyframes fadeIn {
    
     100% {  opacity: 100%; }  
+}
+
+i {
+    color: #d12032;
+    fill: #d12032;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.whiteRight { 
+    position: fixed;
+    overflow: hidden;
+    left: 440px;
+    top: 0;
+    z-index: -20;
+    &_rectangle {
+        fill: #fdfdfd;
+        z-index: -20;
+    }
+}
+
+.redLeft { 
+    position: fixed;
+    overflow: hidden;
+    left: 437px;
+    top: 0;
+    z-index: -25;
+    &_rectangle {
+        fill: #d12032b6;
+        z-index: -25;
+    }
 }

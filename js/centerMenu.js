@@ -37,6 +37,15 @@ anime({
     delay: 8000
   });
 
+anime({
+    targets: 'span',
+    opacity: [60, 100],
+    easing: 'easeOutExpo',
+    duration: 500,
+    delay: 8000,
+    loop: true
+  });
+
   $(function(){
     $('.center_menu--aboutMe').hover(function() {
       $('.center_overflowWrapper_text--aboutMe').addClass('visiable');

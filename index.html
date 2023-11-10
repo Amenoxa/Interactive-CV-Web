@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Interactive CV "Name Placeholder"</title>
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -25,19 +27,19 @@
         <img height="400px" width="400px" class="center_image" src="./assets/img/portrait.jpg">
         <h1 class="center_name">Name Placeholder</h1>
 
-        <img height="30px" width="30px" class="center_menu center_menu--education" src="./assets/img/education.svg">
+        <img height="50px" width="50px" class="center_menu center_menu--education" src="./assets/img/education.svg">
         <div class="center_overflowWrapper"><<h class="center_overflowWrapper_text center_overflowWrapper_text--education">Edukacja</h>/div>
 
-        <img height="30px" width="30px" class="center_menu center_menu--aboutMe" src="./assets/img/aboutMe.svg">
+        <img height="50px" width="50px" class="center_menu center_menu--aboutMe" src="./assets/img/aboutMe.svg">
         <div class="center_overflowWrapper"><<h class="center_overflowWrapper_text center_overflowWrapper_text--aboutMe">O mnie</h></div>
 
-        <img height="30px" width="30px" class="center_menu center_menu--experience" src="./assets/img/experience.svg">
+        <img height="50px" width="50px" class="center_menu center_menu--experience" src="./assets/img/experience.svg">
         <div class="center_overflowWrapper"><<h class="center_overflowWrapper_text center_overflowWrapper_text--experience">Doświadczenie</h></div>
 
-        <img height="30px" width="30px" class="center_menu center_menu--skills" src="./assets/img/skills.svg">
+        <img height="50px" width="50px" class="center_menu center_menu--skills" src="./assets/img/skills.svg">
         <div class="center_overflowWrapper"><<h class="center_overflowWrapper_text center_overflowWrapper_text--skills">Umiejętności</h></div>
 
-        <img height="30px" width="30px" class="center_menu center_menu--contacts" src="./assets/img/contact.svg">
+        <img height="50px" width="50px" class="center_menu center_menu--contacts" src="./assets/img/contact.svg">
         <div class="center_overflowWrapper"><<h class="center_overflowWrapper_text center_overflowWrapper_text--contacts">Kontakt</h></div>
 
     </div>
@@ -46,33 +48,37 @@
     </div>
 
     <div class="sections">
-        <div class="sections_aboutMe">
-            <h2 class="sections_aboutMe_title">O mnie</h2>
-            <span class="sections_aboutMe_line"></span>
-            <p class="sections_aboutMe_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit praesentium 
-                ab voluptas ratione, deserunt commodi illum quibusdam quasi ullam, sit odio neque beatae quos laboriosam veritatis perspiciatis sed temporibus!Lorem
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sequi nulla necessitatibus recusandae repellendus quia cum in pariatur rem doloremque 
-                aliquam, fuga cupiditate rerum! Dicta culpa error doloremque tempora harum!</p>
-            <h2 class="sections_aboutMe_title">Hobby</h2>
-            <span class="sections_aboutMe_line"></span>
-            <p class="sections_aboutMe_text typing"></p>
+        
 
             <div class="sections_contacts invisiable">
                 <h2 class="sections_contacts_title">Kontakt</h2>
                 <span class="sections_contacts_line"></span>
-                <p class="sections_contacts_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit praesentium 
-                    ab voluptas ratione, deserunt commodi illum quibusdam quasi ullam, sit odio neque beatae quos laboriosam veritatis perspiciatis sed temporibus!Lorem
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sequi nulla necessitatibus recusandae repellendus quia cum in pariatur rem doloremque 
-                    aliquam, fuga cupiditate rerum! Dicta culpa error doloremque tempora harum!</p>
+                <p class="sections_contacts_text"><i class="fa-solid fa-phone"></i>111 222 333</p>
+                <p class="sections_contacts_text"><i class="fa-solid fa-envelope"></i>name@e-mail.com</p> 
+                <p class="sections_contacts_text"><i class="fa-brands fa-linkedin-in"></i>linkedin.com/username</p>   
+                <p class="sections_contacts_text"><i class="fa-brands fa-github"></i>github.com/username</p> 
+                <p class="sections_contacts_text"><i class="fa-brands fa-chrome"></i>website.com</p> 
+                <p class="sections_contacts_text"><i class="fa-brands fa-google"></i>wizytówka google</p> 
+
             </div>
 
             <div class="sections_education invisiable">
-                <h2 class="sections_education_title">Wykształcenie</h2>
+                <h2 class="sections_education_title">Edukacja</h2>
                 <span class="sections_education_line"></span>
-                <p class="sections_education_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit praesentium 
-                    ab voluptas ratione, deserunt commodi illum quibusdam quasi ullam, sit odio neque beatae quos laboriosam veritatis perspiciatis sed temporibus!Lorem
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sequi nulla necessitatibus recusandae repellendus quia cum in pariatur rem doloremque 
-                    aliquam, fuga cupiditate rerum! Dicta culpa error doloremque tempora harum!</p>
+                <div class="sections_education_grid">
+                    <p class="sections_education_grid_date sections_education_grid_date--1" >2018-2023</p>
+                    <p class="sections_education_grid_date sections_education_grid_date--2" >2015-2018</p>
+                    <p class="sections_education_grid_date sections_education_grid_date--3" >2012-2015</p>
+
+                    <p class="sections_education_grid_name sections_education_grid_name--1" >Fake University Three</p>
+                    <p class="sections_education_grid_name sections_education_grid_name--2" >Fake University Two</p>
+                    <p class="sections_education_grid_name sections_education_grid_name--3" >Fake University One</p>
+
+                    <p class="sections_education_grid_fos sections_education_grid_fos--1" >Field of Study / Degree One</p>
+                    <p class="sections_education_grid_fos sections_education_grid_fos--2" >Field of Study / Degree Two</p>
+                    <p class="sections_education_grid_fos sections_education_grid_fos--3" >Field of Study / Degree Three</p>
+
+                </div>
             </div>
 
             <div class="sections_skills invisiable">
@@ -92,11 +98,31 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sequi nulla necessitatibus recusandae repellendus quia cum in pariatur rem doloremque 
                     aliquam, fuga cupiditate rerum! Dicta culpa error doloremque tempora harum!</p>
             </div>
+
+            <div class="sections_aboutMe">
+                <h2 class="sections_aboutMe_title">O mnie</h2>
+                <span class="sections_aboutMe_line"></span>
+                <p class="sections_aboutMe_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit praesentium 
+                    ab voluptas ratione, deserunt commodi illum quibusdam quasi ullam, sit odio neque beatae quos laboriosam veritatis perspiciatis sed temporibus!Lorem
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum sequi nulla necessitatibus recusandae repellendus quia cum in pariatur rem doloremque 
+                    aliquam, fuga cupiditate rerum! Dicta culpa error doloremque tempora harum!</p>
+                <h2 class="sections_aboutMe_title">Hobby</h2>
+                <span class="sections_aboutMe_line"></span>
+                <p class="sections_aboutMe_text typing"></p>
+
         </div>
 
 
     <svg class="redRight" width="10px" height="1200">
         <rect class="redRight_rectangle" width="10px" height="1200"/>
+    </svg>
+
+    <svg class="redLeft" width="5px" height="1200">
+        <rect class="redLeft_rectangle" width="5px" height="1200"/>
+    </svg>
+
+    <svg class="whiteRight" width="1200px" height="1200">
+        <rect class="whiteRight_rectangle" width="1200px" height="1200"/>
     </svg>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>

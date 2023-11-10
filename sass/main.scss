@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     @media (max-width: 1100px) {
         overflow-x: hidden;
     }
@@ -19,8 +20,8 @@ a {
 }
 
 //import sections
-@import "_body.scss";
 @import "_typing.scss";
+@import "_body.scss";
 @import "_center.scss";
 @import "_message.scss";
 @import "_sections.scss";
