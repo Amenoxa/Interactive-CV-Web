@@ -82,14 +82,11 @@
             stroke: #665d5c00;
             stroke-width: 3;
             position: absolute;
-            animation: forwards;
             stroke-dasharray: 1 919;
-            animation-name: fillAnimationOuter;
-            animation-duration: 5s;
-            animation-delay: 2s;
             transform: rotate(80deg);
             top:   0px;
             left: 10px;
+            animation: fillAnimationOuter 5000ms forwards 2000ms;
         }
         &_menu {
             position: fixed;

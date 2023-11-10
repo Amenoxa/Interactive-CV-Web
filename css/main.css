@@ -199,19 +199,13 @@ p:nth-last-of-type(1)::after {
   stroke: #665d5c00;
   stroke-width: 3;
   position: absolute;
-  -webkit-animation: forwards;
-          animation: forwards;
   stroke-dasharray: 1 919;
-  -webkit-animation-name: fillAnimationOuter;
-          animation-name: fillAnimationOuter;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
   -webkit-transform: rotate(80deg);
           transform: rotate(80deg);
   top: 0px;
   left: 10px;
+  -webkit-animation: fillAnimationOuter 5000ms forwards 2000ms;
+          animation: fillAnimationOuter 5000ms forwards 2000ms;
 }
 
 .center_menu {
